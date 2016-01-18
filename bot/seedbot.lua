@@ -221,7 +221,7 @@ function create_config( )
     "all",
     "leave_ban"
     },
-    sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {112392827,147828506,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Teleseed v2 - Open Source
@@ -245,80 +245,86 @@ Our channels
 @teleseedch [English]
 @iranseed [persian]
 ]],
-    help_text_realm = [[
-Realm Commands:
+ليست دستورات بات :
+✅!kick [username|id]
+شخص مورد نظر از گروه کيک ميشود.
+(( با ريپلاي هم ميتونيد اين کار رو انجام بدين))
 
-!creategroup [Name]
-Create a group
+✅!ban [ username|id]
+شخص مورد نظر بن شده و ديگر نميتواند به گروه وارد شود
+(( با ريپلاي هم ميتونيد اين کار رو انجام بدين))
 
-!createrealm [Name]
-Create a realm
+✅!unban [id]
+شخص مورد نظر از بن خارج ميشود
+(( با ريپلاي هم ميتونيد اين کار رو انجام بدين))
 
-!setname [Name]
-Set realm name
+✅!who
+ليست ممبر ها
 
-!setabout [GroupID] [Text]
-Set a group's about text
+✅!modlist
+ليست ادمين ها
 
-!setrules [GroupID] [Text]
-Set a group's rules
+✅!promote [username]
+شخص مورد نظر ادمين ميشود
 
-!lock [GroupID] [setting]
-Lock a group's setting
+✅!demote [username]
+شخص مورد نظر از ادمين بودن خارج ميشود
 
-!unlock [GroupID] [setting]
-Unock a group's setting
+✅!kickme
+با فرستادن اين دستور از گروه کيک ميشويد
 
-!wholist
-Get a list of members in group/realm
+✅!about
+درباره گروه
 
-!who
-Get a file of members in group/realm
+✅!setphoto
+قرار دادن عکس و قفل کردن آن
 
-!type
-Get group type
+✅!setname [name]
+تعويض نام گروه و قفل کردن آن
 
-!kill chat [GroupID]
-Kick all memebers and delete group
+✅!rules
+قوانين گروه
 
-!kill realm [RealmID]
-Kick all members and delete realm
+✅!id
+آيدي گروه يا شخص مورد نظر
 
-!addadmin [id|username]
-Promote an admin by id OR username *Sudo only
+✅!help
+راهنما
 
-!removeadmin [id|username]
-Demote an admin by id OR username *Sudo only
+✅!lock [member|name|bots]
 
-!list groups
-Get a list of all groups
+لاک کردن [member|name|bots]
 
-!list realms
-Get a list of all realms
+✅!unlock [member|name|photo|bots]
+آنلاک کردن [member|name|photo|bots]
 
-!log
-Grt a logfile of current group or realm
+✅!set rules <text>
+انتخاب <text> براي قوانين
 
-!broadcast [text]
-!broadcast Hello !
-Send text to all groups
-Only sudo users can run this command
+✅!settings
+نشان دادن تنظيمات گروه
 
-!br [group_id] [text]
-!br 123456789 Hello !
-This command will send text to [group_id]
+✅!newlink
+لينک جديد
 
+✅!link
+لينک گروه
 
-**U can use both "/" and "!" 
+✅!owner
+نمايش آيدي صاحب گروه
 
+✅!stats
+آمار پيام ها
 
-*Only admins and sudo can add bots in group
+✅!res [username]
 
+نشان دادن آيدي شخص مورد نظر
 
-*Only admins and sudo can use kick,ban,unban,newlink,setphoto,setname,lock,unlock,set rules,set about and settings commands
+✅!echo [ ]
+تکرار جمله
 
-*Only admins and sudo can use res, setowner, commands
-]],
+✅!banlist
+ليست کساني که بن شده اند
     help_text = [[
 Commands list :
 
